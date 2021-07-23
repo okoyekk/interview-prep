@@ -1,0 +1,5 @@
+/python-projects/mysql
+/python-projects/maze-solver
+/python-projects/sudoku-solver
+*.pyc
+/python-projects/.vscode
