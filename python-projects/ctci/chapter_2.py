@@ -126,11 +126,11 @@ class LinkedList():
 
 
 # Partition
-def partition()
+def partition(head, value):
     pass
 
-# my_llist = LinkedList()
-# for i in range(10):
-#     my_llist.add_node(i)
-# print(my_llist)
-# print(kth_to_last(my_llist, 5))
+my_llist = LinkedList()
+for i in range(10):
+    my_llist.add_node(i)
+print(my_llist)
+# print(partition(my_llist, 5))
