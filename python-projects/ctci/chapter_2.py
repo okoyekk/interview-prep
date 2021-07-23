@@ -125,12 +125,63 @@ class LinkedList():
 # print(my_llist)
 
 
-# Partition
-def partition(head, value):
-    pass
+# # Partition
+# def partition(llist, value):
+#     # make 2 linked lists, one for nodes less than
+#     # value and one for nodes greater than value
+#     less_list = LinkedList()
+#     more_list = LinkedList()
+#     current = llist.head
+#     while current:
+#         if current.data >= value:
+#             more_list.add_node(current.data)
+#         else:
+#             less_list.add_node(current.data)
+#         current = current.next
+#     # iterate till end of less list and set next 
+#     # of tail to more_list.head
+#     less_ptr = less_list.head
+#     while less_ptr.next:
+#         less_ptr = less_ptr.next
+#     less_ptr.next = more_list.head
+#     return less_list
+    
 
-my_llist = LinkedList()
-for i in range(10):
-    my_llist.add_node(i)
-print(my_llist)
+# my_llist = LinkedList()
+# for i in (3, 5, 8, 10, 2, 1):
+#     my_llist.add_node(i)
+# print(my_llist)
 # print(partition(my_llist, 5))
+
+
+# # Sum Lists
+# def sum_lists(l1, l2):
+#     # function sums 2 lists which are in reverse order
+#     # use a variable to store the carry over
+#     carry = 0
+#     l1_ptr = l1.head
+#     l2_ptr = l2.head
+#     sum_list = LinkedList()
+#     while l1_ptr and l2_ptr:
+#         l1_val = l1_ptr.data
+#         l2_val = l2_ptr.data
+#         # add sum modulo 10 to sum_list
+#         sum_list.add_node((l1_val+l2_val+carry)%10)
+#         # update carry with remainder of sum when divided
+#         carry = (l1_val+l2_val+carry)//10
+#         # shift pointers down their respective lists
+#         l1_ptr = l1_ptr.next
+#         l2_ptr = l2_ptr.next
+#     return sum_list
+        
+
+
+# list_1 = LinkedList()
+# list_2 = LinkedList()
+# for i in (6, 1, 7):
+#     list_1.add_node(i)
+# for j in (2, 9, 5):
+#     list_2.add_node(j)
+# # should print sum of 617 + 295
+# print(sum_lists(list_1, list_2))
+
